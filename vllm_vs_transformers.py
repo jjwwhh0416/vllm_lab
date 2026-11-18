@@ -2,7 +2,7 @@ import time
 import torch
 # ============================================
 
-import # Complete Here !!!
+import vllm
 
 # ============================================
 from transformers import AutoModelForCausalLM, AutoTokenizer
