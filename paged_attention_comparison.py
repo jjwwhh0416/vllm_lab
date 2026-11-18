@@ -51,7 +51,7 @@ if __name__ == '__main__':
     # Run
     # ============================================
     results = []
-    for batch_size in [8]:
+    for batch_size in [1, 4, 8, 32, 64]:
         for paged in [True, False]:
             res = run_inference(use_paged_attention=paged, batch_size=batch_size)
             results.append((paged, batch_size, *res))
